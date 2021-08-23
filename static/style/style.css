@@ -117,6 +117,14 @@ body {
 .carousel-caption p{
   font-size: 3rem !important;
 }
+@media screen and (max-width: 650px) {
+  .carousel-caption h5{
+  font-size: 1.25rem
+}
+.carousel-caption p{
+  font-size: 2rem !important;
+}
+}
 .marketing{
   margin-top: 36px;
   margin-bottom: 100px;
@@ -175,6 +183,16 @@ body {
 .parallax .container p {
   font-size: 2em;
   font-weight: 200;
+}
+@media screen and (max-width: 650px) {
+  .parallax .container h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+.parallax .container p {
+  font-size: 2em;
+  font-weight: 200;
+}
 }
 /* FORM */
 .form{
