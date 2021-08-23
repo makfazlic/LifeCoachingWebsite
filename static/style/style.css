@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800,900');
+html, body {
+  height: 100%;
+}
+body {
+  background: rgb(238, 238, 238) !important;
+  font-family: Alegreya Sans, sans-serif;
+}
+
+.label{
+  position: absolute;
+  left: -130;
+  transform: rotate(-30deg);
+  z-index: 10;
+  width: 500px;
+  text-align: center;
+  background-color: rgb(255, 68, 68);
+}
+.label_title{
+  font-size: 2em;
+  color: whitesmoke;
+  margin: 7;
+}
+/* Beginning*/
+.jumbotron {
+  margin: 0 !important;
+  background-color: transparent !important;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  margin-top: 90px !important;
+  padding: 0 !important;
+  background-size: auto;
+}
+.jumbotron .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jumbotron .container h1 {
+  font-size: 6em;
+  font-weight: 600;
+  width: fit-content;
+}
+.jumbotron .container p {
+  font-size: 3em;
+  font-weight: 200;
+  max-width: 600px;
+  width: fit-content;
+}
+@media screen and (max-width: 1200px) {
+  .jumbotron{
+    height: 900px;
+  }
+  .jumbotron .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .jumbotron .container h1 {
+    font-size: 4em;
+    font-weight: 600;
+  }
+  .jumbotron .container p {
+    font-size: 3em;
+    font-weight: 200;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .jumbotron .container h1 {
+    font-size: 3em;
+    font-weight: 600;
+  }
+  .jumbotron .container p {
+    font-size: 1.5em;
+    font-weight: 200;
+    max-width: 300px;
+  }
+}
+.headthree{
+  margin-top: 55px;
+  margin-bottom: 100px;
+}
+.threecircles{
+  text-align: center !important;
+}
+.circle{
+  margin: 20px 0;
+}
+.threecircles h2{
+  margin: 20px 0;
+}
+.threecircles p{
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+/* carousel */
+.carousel-item {
+  height: 70vh !important;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+.carousel-item img {
+  height: -webkit-fill-available !important;
+}
+.carousel-caption h5{
+  font-size: 1.75rem
+}
+.carousel-caption p{
+  font-size: 3rem !important;
+}
+.marketing{
+  margin-top: 36px;
+  margin-bottom: 100px;
+}
+.featurette{
+  margin: 70px 0;
+}
+.label_slide{
+  position: absolute;
+  top: 42px;
+  left: -29px;
+  transform: rotate(
+-30deg
+);
+  z-index: 10;
+  width: 300px;
+  text-align: center;
+  border-bottom: 35px solid yellow;
+  border-left: 20px solid transparent;
+  border-right: 60px solid transparent;
+  height: 0;
+}
+.carousel-control-next, .carousel-control-prev {
+  z-index: 4 !important;
+}
+.label_slide_title{
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  margin: 7;
+}
+/* Parallax */
+.parallax {
+  /* Set a specific height */
+  min-height: 75vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax .container {
+  text-align: center;
+  color: whitesmoke;
+}
+.parallax .container h1 {
+  font-size: 5em;
+  font-weight: 600;
+}
+.parallax .container p {
+  font-size: 2em;
+  font-weight: 200;
+}
+/* FORM */
+.form{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

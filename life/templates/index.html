@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ana Veljkovic - Life Coach</title>
+    <link rel="icon" href="{% static 'pics/favicon.ico' %}">
+
+
+    
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'style/form.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+  <div class="label">
+    <h1 class="label_title">Life Coaching</h1>
+  </div>
+<body>
+
+{% for config in config %}
+      <div class="jumbotron">
+        <div class="container">
+          <div class="jumbo_left">
+          <h1 class="display-3">{{ config.main_title }}</h1>
+          <p>{{ config.sub_title }}</p>
+          </div>
+          <div class="jumbo_right">
+            <img src="{{ config.main_image.url }}" alt="Ana Veljkovic">
+
+          </div>
+        </div>
+      </div>
+
+
+        <div class="container headthree">
+
+        <div class="row threecircles">
+          <div class="col-lg-4 circle">
+            <img class="rounded-circle" src="{{ config.mini_item_image_1.url }}" alt="Generic placeholder image" width="140" height="140">
+            <h2>{{ config.mini_item_title_1 }}</h2>
+            <p>{{ config.mini_item_descript_1 }}</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 circle">
+            <img class="rounded-circle" src="{{ config.mini_item_image_2.url }}" alt="Generic placeholder image" width="140" height="140">
+            <h2>{{ config.mini_item_title_2 }}</h2>
+            <p>{{ config.mini_item_descript_2 }}</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 circle">
+            <img class="rounded-circle" src="{{ config.mini_item_image_3.url }}" alt="Generic placeholder image" width="140" height="140">
+            <h2>{{ config.mini_item_title_3 }}</h2>
+            <p>{{ config.mini_item_descript_3 }}</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+    </div>
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+        <div class="carousel-item active"
+        
+            style="background-image: url({{ config.slideshow_background_1.url }}); z-index: 3;">
+    <div class="label_slide">
+    <h1 class="label_slide_title">{{ config.slideshow_banner_1 }}</h1>
+  </div>
+  <div class="carousel-caption d-md-block">
+    <h5>{{ config.slideshow_title_1 }}</h5>
+    <p>{{ config.slideshow_subtitle_1 }}</p>
+  </div>
+</div>
+        <div class="carousel-item"
+            style="background-image: url({{ config.slideshow_background_2.url }}); z-index: 2;">
+    <div class="label_slide">
+    <h1 class="label_slide_title">{{ config.slideshow_banner_2 }}</h1>
+  </div>
+  <div class="carousel-caption d-md-block">
+    <h5>{{ config.slideshow_title_2 }}</h5>
+    <p>{{ config.slideshow_subtitle_2 }}</p>
+  </div>
+</div>
+        <div class="carousel-item"
+            style="background-image: url({{ config.slideshow_background_3.url }}); z-index: 1;">
+    <div class="label_slide">
+    <h1 class="label_slide_title">{{ config.slideshow_banner_3 }}</h1>
+  </div>
+  <div class="carousel-caption d-md-block">
+    <h5>{{ config.slideshow_title_3 }}</h5>
+    <p>{{ config.slideshow_subtitle_3 }}</p>
+  </div>
+</div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+      <div class="container marketing">
+
+
+
+
+        <div class="row featurette">
+          <div class="col-md-7 textfield">
+            <h2 class="featurette-heading">{{ config.block_title_black_1 }} <span class="text-muted">{{ config.block_title_silver_1 }}</span></h2>
+            <p class="lead">{{ config.block_descritption_1 }}</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="{{ config.block_image_1.url }}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+
+        <div class="row featurette">
+          <div class="col-md-7 textfield order-md-2">
+            <h2 class="featurette-heading">{{ config.block_title_black_2 }} <span class="text-muted">{{ config.block_title_silver_2 }}</span></h2>
+            <p class="lead">{{ config.block_descritption_2 }}</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="{{ config.block_image_2.url }}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+
+        <div class="row featurette">
+          <div class="col-md-7 textfield">
+            <h2 class="featurette-heading">{{ config.block_title_black_3 }} <span class="text-muted">{{ config.block_title_silver_3 }}</span></h2>
+            <p class="lead">{{ config.block_descritption_3 }}</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="{{ config.block_image_3.url }}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+
+
+    </div>
+    <div class="parallax" style="background-image: url({{ config.scroll_through_image.url }});">
+              <div class="container">
+          <h1 class="display-3">{{ config.scroll_through_title }}</h1>
+          <p>{{ config.scroll_through_subtitle }}</p>
+        </div>
+    </div>
+
+    <div class="form">
+    {% if submitted %}
+            <header>Thank you for reaching out, I will contact you shortly. 
+</header>
+
+    {% else %}
+        <header>CONTACT</header>
+        <form action="" id="form"  class="topBefore"method="POST">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" id="submit" value="GO!">
+        </form>
+    {% endif %}
+
+<!--
+        <form id="form" class="topBefore">
+        		  <input id="name" type="text" placeholder="NAME">
+        		  <input id="email" type="text" placeholder="E-MAIL">
+        		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+        <input id="submit" type="submit" value="GO!">
+        </form>
+-->
+    </div>
+
+
+
+{% endfor %}
+    <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="{% static 'script/script.js' %}"></script>
+</body>
+</html>
