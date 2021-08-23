@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-3((twp980c*&ud(!979k&j$iq_u4^sc%2my=b0$m01&clxbas*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "3.65.121.225"
+        "3.65.121.225", "anaveljkovic.com", "www.anaveljkovic.com"
 ]
 
 
@@ -123,13 +123,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/pics/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "pics/")
+if DEBUG:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, "static/")]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-
-STATICFILES = [STATIC_ROOT]
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
