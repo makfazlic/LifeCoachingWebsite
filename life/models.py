@@ -1,8 +1,14 @@
 from django.db import models
 from datetime import datetime 
 
+
 # Create your models here.
 class Configure(models.Model):
+    main_banner = models.CharField(
+        max_length=20,
+	default="Life Coaching",
+	help_text="Enter the main banner text"
+    )
     main_title = models.CharField(
         max_length=50,
         default="Ana Veljković",
