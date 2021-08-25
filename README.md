@@ -1,3 +1,3 @@
-# LifeCoachingWebsite
-Ana Veljkovic Life coaching website for professional use. - http://anaveljkovic.com
+# Life Coaching Lading Portfolio Website
+For professional use. - http://anaveljkovic.com
 ![Website Preview](./anaveljkoviccap.png)
